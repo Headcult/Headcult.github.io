@@ -20,6 +20,7 @@
         }
 
         var loggedInSSOUserId = getURLParams("HTTP_UID");
+  alert(loggedInSSOUserId);
         var encodedURLVal = btoa(loggedInSSOUserId);
             alert(encodedURLVal);
             var decodedURLVal = atob(encodedURLVal);
