@@ -1,5 +1,8 @@
 "Hello Github Pages from Headcult" 
+
+<p id="uservalue"></p>
+
 <script>
-  window.history.replaceState(null, null + "Advertising");
+  document.getElementById("uservalue").innerHTML = localStorage.getItem("uidName");
 //   window.history.pushState({}, document.title, "/" + "Advertising" );
 </script>
