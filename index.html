@@ -18,9 +18,10 @@
         }
 
         var loggedInSSOUserId = getURLParams("HTTP_UID");
+        console.log("encoded: " + loggedInSSOUserId);
         var decodedURLVal = atob(loggedInSSOUserId);
-        alert(decodedURLVal);
-  
+        console.log("decoded: " + decodedURLVal);
+          
         window.history.replaceState({}, document.title, "/" + "");
   
 </script>
