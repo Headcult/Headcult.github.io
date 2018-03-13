@@ -5,4 +5,12 @@
 <script>
   //window.history.pushState({}, document.title, "/" + "Advertising-Push");
   window.history.replaceState({}, document.title, "/" + "");
+  
+  var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+var headers = req.getAllResponseHeaders().toLowerCase();
+alert(headers);
+  
+  
 </script>
