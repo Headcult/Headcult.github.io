@@ -1,8 +1,6 @@
 "Hello Github Pages from Headcult" 
 
 <script>
-  //window.history.pushState({}, document.title, "/" + "Advertising-Push");
- 
  
         function getURLParams(urlParam)
         {
@@ -20,10 +18,9 @@
         }
 
         var loggedInSSOUserId = getURLParams("HTTP_UID");
-  alert(loggedInSSOUserId);
-            var decodedURLVal = atob(loggedInSSOUserId);
-            alert(decodedURLVal);
+        var decodedURLVal = atob(loggedInSSOUserId);
+        alert(decodedURLVal);
   
-   window.history.replaceState({}, document.title, "/" + "");
+        window.history.replaceState({}, document.title, "/" + "");
   
 </script>
